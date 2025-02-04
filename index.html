@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header class="weather-header">
+      <div class="header-content">
+        <div class="city">PHILADELPHIA</div>
+        <div class="temperature">35°F</div>
+        <div class="fulldate">FEBRUARY 2, 2025</div>
+      </div>
+    </header>
+
+    <main class="schedule-container">
+      <div class="time-column">
+        <div class="time-label">6 AM</div>
+        <div class="time-label">7 AM</div>
+        <div class="time-label">8 AM</div>
+        <div class="time-label">9 AM</div>
+        <div class="time-label">10 AM</div>
+        <div class="time-label">11 AM</div>
+        <div class="time-label">12 PM</div>
+        <div class="time-label">1 PM</div>
+        <div class="time-label">2 PM</div>
+        <div class="time-label">3 PM</div>
+        <div class="time-label">4 PM</div>
+      </div>
+      <div class="events-column">
+        <div class="event-component" style="top: calc((8 - var(--schedule-start)) * var(--hour-height));">
+          <div class="weather-component">
+            <div class="cell left time-event">
+              <div class="time">7:00 - 10:00am</div>
+              <div class="event">PICNIC</div>
+            </div>
+            <div class="cell uv-section">
+              <div class="uv-label">UV Index</div>
+              <div class="uv-bar-container">
+                <div class="uv-pointer"></div>
+                <div class="uv-value">1</div>
+              </div>
+            </div>
+            <div class="cell bottom left precip-section">
+              <div class="precip-label">Precipitation</div>
+              <div class="precip-info">
+                <img src="./assets/water_icon.png" alt="Water Droplet" style="width: 60px;">
+                <div>
+                  <div class="precip-amount">0mm</div>
+                  <div class="precip-time">In The Last 180min</div>
+                </div>
+              </div>
+            </div>
+            <div class="cell bottom other-info">
+              <div class="feels-like">
+                <div class="feels-like-label">Feels Like</div>
+                <div class="feels-like-value">33°</div>
+              </div>
+              <div class="air-quality">
+                <div class="air-quality-label">Air Quality</div>
+                <div class="air-quality-value">30 AQI</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event-component" style="top: calc((13 - var(--schedule-start)) * var(--hour-height));">
+          <div class="weather-component">
+            <div class="cell left time-event">
+              <div class="time">12:00 - 2:45pm</div>
+              <div class="event">BIKING</div>
+            </div>
+            <div class="cell uv-section">
+              <div class="uv-label">UV Index</div>
+              <div class="uv-bar-container">
+                <div class="uv-pointer"></div>
+                <div class="uv-value">1</div>
+              </div>
+            </div>
+            <div class="cell bottom left precip-section">
+              <div class="precip-label">Precipitation</div>
+              <div class="precip-info">
+                <img src="./assets/water_icon.png" alt="Water Droplet" style="width: 60px;">
+                <div>
+                  <div class="precip-amount">40mm</div>
+                  <div class="precip-time">In The Last 165min</div>
+                </div>
+              </div>
+            </div>
+            <div class="cell bottom other-info">
+              <div class="feels-like">
+                <div class="feels-like-label">Feels Like</div>
+                <div class="feels-like-value">40°</div>
+              </div>
+              <div class="air-quality">
+                <div class="air-quality-label">Air Quality</div>
+                <div class="air-quality-value">20 AQI</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="week-header">
+      <button class="arrow left">&larr;</button>
+      <span class="week-label">This Week</span>
+      <button class="arrow right">&rarr;</button>
+    </div>
+
+    <footer class="weekly-calendar">
+      <div class="day">
+        <div class="day-name">Sun</div>
+        <div class="date">1</div>
+        <svg class="sunday-sunny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"
+                  d="M42.5 32A10.5 10.5 0 1132 21.5 10.5 10.5 0 0142.5 32zM32 15.71V9.5m0 45v-6.21m11.52-27.81l4.39-4.39M16.09 47.91l4.39-4.39m0-23l-4.39-4.39m31.82 31.78l-4.39-4.39M15.71 32H9.5m45 0h-6.21"/>
+            <animateTransform attributeName="transform" dur="45s" from="0 32 32" repeatCount="indefinite" to="360 32 32" type="rotate"/>
+          </g>
+        </svg>
+      </div>
+      <div class="day">
+        <div class="day-name">Mon</div>
+        <div class="date">2</div>
+        <svg class="monday-cloudy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <defs>
+            <clipPath id="a">
+              <path fill="none" d="M12 35l-5.28-4.21-2-6 1-7 4-5 5-3h6l5 1 3 3L33 20l-6 4h-6l-3 3v4l-4 2-2 2z"/>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#a)">
+            <g>
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M23.5 24a4.5 4.5 0 11-4.5-4.5 4.49 4.49 0 014.5 4.5zM19 15.67V12.5m0 23v-3.17m5.89-14.22l2.24-2.24M10.87 32.13l2.24-2.24m0-11.78l-2.24-2.24m16.26 16.26l-2.24-2.24M7.5 24h3.17m19.83 0h-3.17"/>
+              <animateTransform attributeName="transform" dur="45s" from="0 19 24" repeatCount="indefinite" to="360 19 24" type="rotate"/>
+            </g>
+          </g>
+          <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="3" d="M46.5 31.5h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0h28a7 7 0 000-14z"/>
+        </svg>
+      </div>
+      <div class="day">
+        <div class="day-name">Tue</div>
+        <div class="date">3</div>
+        <svg class="tuesday-rainy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M43.67 45.5h2.83a7 7 0 000-14h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0"/>
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M24.39 43.03l-.78 4.94"/>
+            <animateTransform attributeName="transform" dur="0.7s" repeatCount="indefinite" type="translate" values="1 -5; -2 10"/>
+            <animate attributeName="opacity" dur="0.7s" repeatCount="indefinite" values="0;1;1;0"/>
+          </g>
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M31.39 43.03l-.78 4.94"/>
+            <animateTransform attributeName="transform" begin="-0.4s" dur="0.7s" repeatCount="indefinite" type="translate" values="1 -5; -2 10"/>
+            <animate attributeName="opacity" begin="-0.4s" dur="0.7s" repeatCount="indefinite" values="0;1;1;0"/>
+          </g>
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M38.39 43.03l-.78 4.94"/>
+            <animateTransform attributeName="transform" begin="-0.2s" dur="0.7s" repeatCount="indefinite" type="translate" values="1 -5; -2 10"/>
+            <animate attributeName="opacity" begin="-0.2s" dur="0.7s" repeatCount="indefinite" values="0;1;1;0"/>
+          </g>
+        </svg>
+      </div>
+      <div class="day">
+        <div class="day-name">Wed</div>
+        <div class="date">4</div>
+        <svg class="wednesday-sunny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"
+                  d="M42.5 32A10.5 10.5 0 1132 21.5 10.5 10.5 0 0142.5 32zM32 15.71V9.5m0 45v-6.21m11.52-27.81l4.39-4.39M16.09 47.91l4.39-4.39m0-23l-4.39-4.39m31.82 31.78l-4.39-4.39M15.71 32H9.5m45 0h-6.21"/>
+            <animateTransform attributeName="transform" dur="45s" from="0 32 32" repeatCount="indefinite" to="360 32 32" type="rotate"/>
+          </g>
+        </svg>
+      </div>
+      <div class="day">
+        <div class="day-name">Thu</div>
+        <div class="date">5</div>
+        <svg class="thursday-windy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M17 20h30"/>
+            <animateTransform attributeName="transform" dur="2s" repeatCount="indefinite" type="translate" values="-3 0; 3 0; -3 0"/>
+          </g>
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M19 26h26"/>
+            <animateTransform attributeName="transform" begin="-0.2s" dur="2s" repeatCount="indefinite" type="translate" values="-4 0; 4 0; -4 0"/>
+          </g>
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M21.5 32h21"/>
+            <animateTransform attributeName="transform" begin="-0.4s" dur="2s" repeatCount="indefinite" type="translate" values="-5 0; 5 0; -5 0"/>
+          </g>
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M24 38h16"/>
+            <animateTransform attributeName="transform" begin="-0.6s" dur="2s" repeatCount="indefinite" type="translate" values="-6 0; 6 0; -6 0"/>
+          </g>
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M28 44h8"/>
+            <animateTransform attributeName="transform" begin="-0.8s" dur="2s" repeatCount="indefinite" type="translate" values="-7 0; 7 0; -7 0"/>
+          </g>
+        </svg>
+      </div>
+      <div class="day">
+        <div class="day-name">Fri</div>
+        <div class="date">6</div>
+        <svg class="friday-sunny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <g>
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"
+                  d="M42.5 32A10.5 10.5 0 1132 21.5 10.5 10.5 0 0142.5 32zM32 15.71V9.5m0 45v-6.21m11.52-27.81l4.39-4.39M16.09 47.91l4.39-4.39m0-23l-4.39-4.39m31.82 31.78l-4.39-4.39M15.71 32H9.5m45 0h-6.21"/>
+            <animateTransform attributeName="transform" dur="45s" from="0 32 32" repeatCount="indefinite" to="360 32 32" type="rotate"/>
+          </g>
+        </svg>
+      </div>
+      <div class="day">
+        <div class="day-name">Sat</div>
+        <div class="date">7</div>
+        <svg class="saturday-cloudy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <defs>
+            <clipPath id="a">
+              <path fill="none" d="M12 35l-5.28-4.21-2-6 1-7 4-5 5-3h6l5 1 3 3L33 20l-6 4h-6l-3 3v4l-4 2-2 2z"/>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#a)">
+            <g>
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M23.5 24a4.5 4.5 0 11-4.5-4.5 4.49 4.49 0 014.5 4.5zM19 15.67V12.5m0 23v-3.17m5.89-14.22l2.24-2.24M10.87 32.13l2.24-2.24m0-11.78l-2.24-2.24m16.26 16.26l-2.24-2.24M7.5 24h3.17m19.83 0h-3.17"/>
+              <animateTransform attributeName="transform" dur="45s" from="0 19 24" repeatCount="indefinite" to="360 19 24" type="rotate"/>
+            </g>
+          </g>
+          <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="3" d="M46.5 31.5h-.32a10.49 10.49 0 00-19.11-8 7 7 0 00-10.57 6 7.21 7.21 0 00.1 1.14A7.5 7.5 0 0018 45.5a4.19 4.19 0 00.5 0v0h28a7 7 0 000-14z"/>
+        </svg>
+      </div>
+    </footer>
+
+    <div class="fab-container">
+      <button class="fab share-btn">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg width="40px" height="30px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>ic_fluent_share_ios_48_filled</title>
+            <desc>Created with Sketch.</desc>
+            <g id="🔍-Product-Icons" stroke="#fffff" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="ic_fluent_share_ios_48_filled" fill="#ffffff" fill-rule="nonzero">
+                    <path d="M37.75,20.25 C38.6681734,20.25 39.4211923,20.9571103 39.4941988,21.8564728 L39.5,22 L39.5,36.25 C39.5,39.3517853 37.0439828,41.879937 33.9705557,41.9958479 L33.75,42 L14.25,42 C11.1482147,42 8.62006299,39.5439828 8.50415208,36.4705557 L8.5,36.25 L8.5,22 C8.5,21.0335017 9.28350169,20.25 10.25,20.25 C11.1681734,20.25 11.9211923,20.9571103 11.9941988,21.8564728 L12,22 L12,36.25 C12,37.440864 12.9251616,38.4156449 14.0959512,38.4948092 L14.25,38.5 L33.75,38.5 C34.940864,38.5 35.9156449,37.5748384 35.9948092,36.4040488 L36,36.25 L36,22 C36,21.0335017 36.7835017,20.25 37.75,20.25 Z M23.4989075,6.26787884 L23.6477793,6.25297693 L23.6477793,6.25297693 L23.8225053,6.25140103 L23.8225053,6.25140103 L23.9770074,6.26441014 L23.9770074,6.26441014 L24.1549097,6.29667263 L24.1549097,6.29667263 L24.223898,6.31492315 L24.223898,6.31492315 C24.4192207,6.36884271 24.6069182,6.4577966 24.7773762,6.58126437 L24.8968901,6.67628678 L24.8968901,6.67628678 L24.989825,6.76256313 L32.7679996,14.5407377 C33.4514171,15.2241552 33.4514171,16.3321939 32.7679996,17.0156115 C32.1247831,17.6588279 31.1054316,17.6966642 30.4179639,17.1291203 L30.2931259,17.0156115 L25.5,12.222 L25.5,31.5 C25.5,32.4181734 24.7928897,33.1711923 23.8935272,33.2441988 L23.75,33.25 C22.8318266,33.25 22.0788077,32.5428897 22.0058012,31.6435272 L22,31.5 L22,12.226 L17.2116504,17.0156115 C16.5684339,17.6588279 15.5490824,17.6966642 14.8616148,17.1291203 L14.7367767,17.0156115 C14.0935602,16.372395 14.055724,15.3530435 14.6232679,14.6655758 L14.7367767,14.5407377 L22.488804,6.78678454 C22.5446792,6.72871358 22.6045271,6.67449255 22.6679103,6.62455868 L22.7812362,6.54379243 L22.7812362,6.54379243 C22.8189499,6.51724 22.858413,6.49312256 22.8988638,6.47056335 L22.9176605,6.46138558 C23.0947495,6.36422067 23.2909216,6.29776289 23.4989075,6.26787884 Z" id="🎨-Color">
+        
+        </path>
+                </g>
+            </g>
+        </svg>
+      </button>
+      <button class="fab map-btn">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <svg fill="#ffffff" stroke="#fffff" height="30" width="30" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+          viewBox="0 0 368.553 368.553" xml:space="preserve">
+        <g>
+          <g>
+            <path d="M184.277,0c-71.683,0-130,58.317-130,130c0,87.26,119.188,229.855,124.263,235.883c1.417,1.685,3.504,2.66,5.705,2.67
+              c0.011,0,0.021,0,0.032,0c2.189,0,4.271-0.957,5.696-2.621c5.075-5.926,124.304-146.165,124.304-235.932
+              C314.276,58.317,255.96,0,184.277,0z M184.322,349.251C160.385,319.48,69.277,201.453,69.277,130c0-63.411,51.589-115,115-115
+              s115,51.589,115,115C299.276,203.49,208.327,319.829,184.322,349.251z"/>
+            <path d="M184.277,72.293c-30.476,0-55.269,24.793-55.269,55.269s24.793,55.269,55.269,55.269s55.269-24.793,55.269-55.269
+              S214.753,72.293,184.277,72.293z M184.277,167.83c-22.204,0-40.269-18.064-40.269-40.269s18.064-40.269,40.269-40.269
+              s40.269,18.064,40.269,40.269S206.48,167.83,184.277,167.83z"/>
+          </g>
+          
+        </g>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</body>
+</html>
