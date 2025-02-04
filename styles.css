@@ -14,13 +14,12 @@
 
 body {
   background: #e3f0f0;
-  padding: 20px;
 }
 
 .container {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
-  /* Use your gradient here */
   background: linear-gradient(180deg, var(--main-color), #9ececa, #aad58d, #e3c885);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding-left: 20px;
@@ -162,6 +161,7 @@ body {
   border-radius: 4px;
   margin: 0 4px;
 }
+
 .weekly-calendar .day:nth-child(1) { color: var(--main-color); }
 .weekly-calendar .day:nth-child(2) { color: #9ececa; }
 .weekly-calendar .day:nth-child(3) { color: #aad58d; }
